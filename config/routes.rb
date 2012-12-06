@@ -2,6 +2,15 @@ Rorapp::Application.routes.draw do
   resources :products
 
 
+####################################
+
+#map.root :controller => 'products'
+#map.home '' , :controller => 'products' , :action => 'index'
+
+root :to => "products#index"
+
+####################################
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
