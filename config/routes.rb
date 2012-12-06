@@ -1,4 +1,7 @@
 Rorapp::Application.routes.draw do
+
+  get "store/index"
+
   resources :products
 
 
@@ -7,7 +10,7 @@ Rorapp::Application.routes.draw do
 #map.root :controller => 'products'
 #map.home '' , :controller => 'products' , :action => 'index'
 
-root :to => "products#index"
+root :to => "store#index", as: 'store'
 
 ####################################
 
