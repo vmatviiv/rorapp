@@ -1,0 +1,11 @@
+rails generate Store index
+rails generate controller Store index
+rails generate scaffold cart
+rails generate scaffold line_item product_id:integer cart_id:integer
+rails generate migration add_quantity_to_line_items quantity:integer
+rails generate migration combine_items_in_cart
+rails generate mailer OrderNotifier received shipped
+rails generate integration_test user_stories
+
+
+
