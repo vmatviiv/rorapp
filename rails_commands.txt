@@ -6,6 +6,6 @@ rails generate migration add_quantity_to_line_items quantity:integer
 rails generate migration combine_items_in_cart
 rails generate mailer OrderNotifier received shipped
 rails generate integration_test user_stories
-
+rails generate scaffold User name:string password_digest:string
 
 
