@@ -12,24 +12,31 @@ Rorapp::Application.routes.draw do
     post 'login' => :create
     delete 'logout' => :destroy
   end
+  
+  scope '(:locale)' do
+     resources :users
+     resources :orders
+     resources :line_items
+     resources :carts
 
-  resources :users
-  resources :orders
-  resources :line_items
-  resources :carts
+     get "store/index"
 
-  get "store/index"
+     resources :products do
+         get :who_bought, on: :member
+     end
 
-  resources :products do
-      get :who_bought, on: :member
+     root :to => "store#index", as: 'store'
+
   end
+
+
 
 ####################################
 
 #map.root :controller => 'products'
 #map.home '' , :controller => 'products' , :action => 'index'
 
-root :to => "store#index", as: 'store'
+#root :to => "store#index", as: 'store'
 
 ####################################
 

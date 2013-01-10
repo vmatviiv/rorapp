@@ -27,4 +27,6 @@ production:
   database: rorapp
   pool: 5
   username: root
-
+  password: '1whisky&soda?YES!'
+  host: localhost
+  #socket: /tmp/mysql.sock

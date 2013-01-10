@@ -16,6 +16,12 @@ gem 'therubyracer'
 gem 'will_paginate', '~> 3.0'
 gem 'bcrypt-ruby', '~> 3.0.0'
 
+#gem 'webrick', '1.3.1'
+#gem 'thin'
+gem 'puma'
+
+gem 'capistrano'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

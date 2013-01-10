@@ -93,7 +93,7 @@
   }
   form {
     label {
-      width: 5em;
+      width: 8em;
       float: left;
       text-align: right;
       padding-top: 0.2em;
@@ -112,5 +112,10 @@
       display: none
     }
   }
+}
+
+.locale {
+  float: right;
+  margin: -0.25em 0.1em;
 }
 
